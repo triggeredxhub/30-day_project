@@ -4,51 +4,126 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+
     <title>Document</title>
 </head>
 
 <body>
-    
+
     <header>
         <nav>
             <ul>
-                <li><a href="https://example.com/home">Home</a></li>
-                <li><a href="https://example.com/about">About</a></li>
-                <li><a href="https://example.com/contact">Contact</a></li>
+                <li><a href="#main">Home</a></li>
+                <li><a href="#cv-summary">About</a></li>
+                <li><a href="#additional-content">Contact</a></li>
             </ul>
         </nav>
     </header>
-    
-    <main>
+
+    <main id="main">
         <div class="container">
-            <section>
-            <h3>Section Title</h3>
-            <p>This section contains additional information relevant to the main content.</p>
-        </section>
-        <aside>
-            <h3>Aside Title</h3>
-            <p>This is some additional content that complements the main content.</p>
-        </aside>
+            <section id="cv">
+
+                <img src="../../assets/image/Jose_nathaniel_CV.png" alt="CV Photo" class="cv-image">
+            </section>
+            <section class="cv-section">
+                <h2>Hello, I'm Nathan</h2>
+                <p>
+                    Full-stack developer with experience in mobile and web development. Skilled in Flutter, HTML, CSS,
+                    JavaScript, Node.js, REST APIs, and MySQL. Passionate about building scalable, user-focused
+                    applications.
+                </p>
+
+
+                <div class="cv-download-box">
+                    <div class="cv-info">
+                        <strong>Microsoft Word</strong>
+                        <p>File Size: 371 KB</p>
+                    </div>
+                    <a href="path-to-your-cv.docx" class="download-btn">Download</a>
+                </div>
+
+                <p class="note">
+                    <em>Note:</em> The profile photo in this CV is AI-generated for privacy and consistency. Sample
+                    project descriptions are included for demonstration purposes.
+                </p>
+            </section>
+
         </div>
-        
-        
-        <article>
-            <h2>Article Title</h2>
-            <p>This is the main content of the page. It contains detailed information about the topic at hand.</p>
-            
+
+
+        <article class="tech-icons" >
+            <h2>Tech Stack</h2>
+            <div class="icon-row">
+                <img src="../../assets/icons/firebase.svg" alt="Firebase" class="icon" />
+                <img src="../../assets/icons/mysql.svg" alt="MySQL" class="icon" />
+                <img src="../../assets/icons/html.svg" alt="HTML5" class="icon" />
+                <img src="../../assets/icons/css-3.svg" alt="CSS3" class="icon" />
+                <img src="../../assets/icons/javascript.svg" alt="JavaScript" class="icon" />
+                <img src="../../assets/icons/nodejs-icon.svg" alt="Node.js" class="icon" />
+                <img src="../../assets/icons/flutter.svg" alt="Flutter" class="icon" />
+            </div>
+
+            <h3>Tools</h3>
+            <div class="icon-row">
+                <img src="../../assets/icons/postman.svg" alt="Postman" class="icon" />
+                <img src="../../assets/icons/git.svg" alt="Git" class="icon" />
+                <img src="../../assets/icons/github.svg" alt="GitHub" class="icon" />
+            </div>
         </article>
-        <article>
-            <h2>2nd article Title</h2>
-            <p>This is the main content of the second article. It contains detailed information about the topic at hand.</p>
+
+
+
+
+
+        <article class="cv-summary" id="cv-summary">
+            <h2>Work Experience</h2>
+
+            <section>
+                <h3>Internship – Full Stack Developer </h3>
+                <p><strong>Company:</strong> PLSP - IS <br>
+                    <strong>Duration:</strong> February 2025 – June 2025
+                </p>
+                </p>
+                <ul>
+                    <li>Developed features for an internal LMS using Flutter (UI) and Node.js (API)</li>
+                    <li>Designed and consumed REST APIs for assignment, material, and announcement modules</li>
+                    <li>Handled authentication using JWT and implemented role-based access (admin, instructor, student)
+                    </li>
+                    <li>Used Railway to deploy backend with MySQL, and integrated Firebase push notifications</li>
+                    <li>Practiced Git version control, team collaboration, and agile workflows</li>
+                </ul>
+            </section>
         </article>
+
     </main>
-    <div class="additional-content">
-        <h2>Additional Content</h2>
-        <p>This section can be used for any extra information or links that are relevant to the page.</p>
+    <div class="additional-content" id="additional-content">
+        <h2>Connect with Me</h2>
+        <div class="contact-icons">
+            <a href="https://facebook.com/yourusername" target="_blank" title="Facebook">
+                <img src="../../assets/icons/facebook.svg" alt="Facebook" />
+            </a>
+            <a href="https://github.com/yourusername" target="_blank" title="GitHub">
+                <img src="../../assets/icons/github.svg" alt="GitHub" />
+            </a>
+            <a href="https://linkedin.com/in/yourusername" target="_blank" title="LinkedIn">
+                <img src="../../assets/icons/linkedin.svg" alt="LinkedIn" />
+            </a>
+            <a href="mailto:your.email@example.com" title="Gmail">
+                <img src="../../assets/icons/google-gmail.svg" alt="Gmail" />
+            </a>
+            <a href="https://discord.com/users/yourdiscordid" target="_blank" title="Discord">
+                <img src="../../assets/icons/discord.svg" alt="Discord" />
+            </a>
+            <!-- Add more as needed -->
+        </div>
     </div>
+
     <footer>
-        <p>&copy; 2023 Your Website. All rights reserved.</p>
+        <p>&copy; 2024 Jose Nathaniel P. Antonio. All rights reserved.</p>
     </footer>
+
 
 </body>
 
